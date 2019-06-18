@@ -8,7 +8,7 @@ Summary:        A lightweight derivative of Enthought Traits for configuring Pyt
 Group:          Development/Python
 License:        BSD
 URL:            https://github.com/ipython/traitlets
-Source0:	https://github.com/ipython/traitlets/archive/%{version}.tar.gz#/%{srcname}-%{version}.tar.gz
+Source0:	https://github.com/ipython/traitlets/archive/%{version}.tar.gz#/%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:	python-setuptools
