@@ -29,7 +29,7 @@ Summary:        A lightweight derivative of Enthought Traits for configuring Pyt
 %prep
 %setup -q -n %{srcname}-%{srcversion}
 
-%apply_patches
+%autopatch -p1
 
 cp -a . %py2dir
 
