@@ -1,14 +1,14 @@
 %global srcname traitlets
-%global srcversion 4.3.1
+%global srcversion 5.0.5
 
 Name:           python-%srcname
-Version:        4.3.1
+Version:        5.0.5
 Release:        1
 Summary:        A lightweight derivative of Enthought Traits for configuring Python objects
 Group:          Development/Python
 License:        BSD
 URL:            https://github.com/ipython/traitlets
-Source0:	https://github.com/ipython/traitlets/archive/%{version}.tar.gz#/%{version}.tar.gz
+Source0:	https://github.com/ipython/traitlets/archive/%{version}/%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:	python-setuptools
