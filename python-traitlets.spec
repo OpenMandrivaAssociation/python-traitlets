@@ -26,6 +26,10 @@ This package powers the config system of IPython and Jupyter.
 %package -n python2-%srcname
 Summary:        A lightweight derivative of Enthought Traits for configuring Python objects
 
+%description -n python2-%srcname
+A lightweight pure-Python derivative of Enthought Traits, used for
+configuring Python objects.
+
 %prep
 %setup -q -n %{srcname}-%{srcversion}
 
