@@ -3,7 +3,7 @@
 
 Name:           python-%srcname
 Version:        5.0.5
-Release:        2
+Release:        3
 Summary:        A lightweight derivative of Enthought Traits for configuring Python objects
 Group:          Development/Python
 License:        BSD
