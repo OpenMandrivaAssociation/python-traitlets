@@ -1,18 +1,17 @@
 %global srcname traitlets
-%global srcversion 5.0.5
 
 Name:           python-%srcname
-Version:        5.0.5
-Release:        3
+Version:        5.14.3
+Release:        1
 Summary:        A lightweight derivative of Enthought Traits for configuring Python objects
 Group:          Development/Python
 License:        BSD
 URL:            https://github.com/ipython/traitlets
-Source0:	https://github.com/ipython/traitlets/archive/%{version}/%{srcname}-%{version}.tar.gz
+Source0:	https://github.com/ipython/traitlets/releases/download/v%{version}/traitlets-%{version}.tar.gz
 BuildArch:      noarch
 
-BuildRequires:	python-setuptools
-BuildRequires:	python-devel
+BuildSystem:	python
+BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
 A lightweight pure-Python derivative of Enthought Traits, used for
@@ -20,18 +19,7 @@ configuring Python objects.
 
 This package powers the config system of IPython and Jupyter.
 
-%prep
-%setup -q -n %{srcname}-%{srcversion}
-
-%autopatch -p1
-
-%build
-%{__python} setup.py build
-
-%install
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
-
 %files
-%doc README.md CONTRIBUTING.md COPYING.md
-%{python_sitelib}/*.egg-info
+%doc README.md CONTRIBUTING.md
+%{python_sitelib}/*.dist-info
 %{python_sitelib}/%srcname
