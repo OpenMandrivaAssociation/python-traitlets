@@ -12,6 +12,7 @@ BuildArch:      noarch
 
 BuildSystem:	python
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(hatchling)
 
 %description
 A lightweight pure-Python derivative of Enthought Traits, used for
